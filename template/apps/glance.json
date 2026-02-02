@@ -1,0 +1,18 @@
+{
+    "categories": ["Dashboards", "Other"],
+    "description": "Minimal, highly configurable dashboard.",
+    "image": "glanceapp/glance:latest",
+    "logo": "https://raw.githubusercontent.com/glanceapp/glance/refs/heads/main/docs/logo.png",
+    "name": "glance",
+    "title": "Glance",
+    "platform": "linux",
+    "ports": ["8182:8080/tcp"],
+    "volumes": [
+      { "bind": "/portainer/Files/AppData/Config/glance", "container": "/app/config" }
+    ],
+    "restart_policy": "unless-stopped",
+    "type": 1,
+    "webpage": "https://github.com/glanceapp/glance",
+    "officialDoc": "https://github.com/glanceapp/glance#docker",
+    "preInstallScript": "install_glance.sh"
+  }
