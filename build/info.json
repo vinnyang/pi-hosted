@@ -322,6 +322,13 @@
 			"Doc": "reactive-resume_installation.md",
 			"Description": "Install Reactive-Resume",
 			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_reactive-resume.sh"
+		},
+		{
+			"File": "install_glance.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Preinstall setup for Glance",
+			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_glance.sh"
 		}
 	]
 }
