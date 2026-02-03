@@ -1,0 +1,23 @@
+{
+    "categories": ["Other", "Tools"],
+    "description": "Private front-end for Reddit.",
+    "image": "quay.io/redlib/redlib:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/redlib.png",
+    "name": "redlib",
+    "title": "Redlib",
+    "platform": "linux",
+    "ports": ["8089:8080/tcp"],
+    "restart_policy": "unless-stopped",
+    "type": 1,
+    "webpage": "https://github.com/redlib-org/redlib/",
+    "officialDoc": "https://github.com/redlib-org/redlib/#configuration",
+    "piHostedDoc": "redlib.md",
+    "env": [
+      {
+        "name": "REDLIB_DEFAULT_SUBSCRIPTIONS",
+        "label": "REDLIB_DEFAULT_SUBSCRIPTIONS",
+        "default": "",
+        "description": "Default subreddits list (plus-delimited)."
+      }
+    ]
+  }

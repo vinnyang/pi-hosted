@@ -315,7 +315,11 @@
 			"Description": "Install Invidious",
 			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_invidious.sh"
 		},
-                {
+		{
+			"File": "redlib.md",
+			"Description": "Install and configuration notes for Redlib (env vars, defaults)."
+		},
+		{
 			"File": "install_reactive-resume.sh",
 			"Type": "Preinstall",
 			"Exec": "bash",
