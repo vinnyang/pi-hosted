@@ -953,6 +953,30 @@
 		},
 		{
 			"categories": [
+				"Dashboards",
+				"Other"
+			],
+			"description": "Minimal, highly configurable dashboard.",
+			"image": "glanceapp/glance:latest",
+			"logo": "https://raw.githubusercontent.com/glanceapp/glance/refs/heads/main/docs/logo.png",
+			"name": "glance",
+			"title": "Glance",
+			"platform": "linux",
+			"ports": [
+				"8182:8080/tcp"
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/glance",
+					"container": "/app/config"
+				}
+			],
+			"restart_policy": "unless-stopped",
+			"type": 1,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/glanceapp/glance\" target=\"_blank\">https://github.com/glanceapp/glance</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/glanceapp/glance#docker\" target=\"_blank\">https://github.com/glanceapp/glance#docker</a><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_glance.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_glance.sh | bash</h3><br><br>"
+		},
+		{
+			"categories": [
 				"Proxy"
 			],
 			"description": "Simple socks5 server using go-socks5 with authentication options",
